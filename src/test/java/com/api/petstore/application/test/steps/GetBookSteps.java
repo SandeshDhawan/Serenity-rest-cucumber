@@ -26,18 +26,13 @@ public class GetBookSteps {
 	CommonRest commonRest;
 
 	@Given("^User create a request for geting book details for sevice (.*)$")
-	public void createRequestForGettingBookDetailsBuAuthor(String service) {
+	public void createRequestForGettingBookDetailsByAuthor(String service) {
 		request = commonRest.createRequestWithContentType(service);
 	}
 
-	@And("^User pass Invalid Author Name for QueryParametr as (.*)$")
-	public void createRequestWithInvalidQueryParameter(String queryparameter) {
-		request = commonRest.createRequestWithInvalidQueryParameter(queryparameter);
-	}
-
-	@And("^User pass valid Author Name for QueryParametr as (.*)$")
-	public void createRequestWithValidQueryParameter(String queryparameter) {
-		request = commonRest.createRequestWithValidQueryParameter(queryparameter);
+	@And("^User pass value as (.*) for QueryParametr as (.*)$")
+	public void createRequestWithInvalidQueryParameter(String Value, String queryparameter) {
+		request = commonRest.createRequestWithInvalidQueryParameter(Value, queryparameter);
 	}
 
 	@When("^User sends a request for getting book details to (.*)$")

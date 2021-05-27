@@ -51,9 +51,9 @@ public class CommonRest {
 		return request;
 	}
 
-	public RequestSpecification createRequestWithInvalidQueryParameter(String queryParameter) {
+	public RequestSpecification createRequestWithInvalidQueryParameter(String Value, String queryParameter) {
 		readProperties();
-		request = request.given().queryParam(queryParameter, "Test_" + createdata.generateAuthor());
+		request = request.given().queryParam(queryParameter, Value);
 		return request;
 	}
 
