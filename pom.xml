@@ -167,6 +167,7 @@
 						<include>**/Test*.java</include>
 						<include>**/*TestSuite.java</include>
 						<include>**/When*.java</include>
+						<include>**/CreateBookDetails.feature</include>
 					</includes>
 					<systemPropertyVariables>
 						<webdriver.base.url>${webdriver.base.url}</webdriver.base.url>
