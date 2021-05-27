@@ -3,7 +3,7 @@
 <suite name="REST API Validations">
 	<test name="API Test Cases">
 		<classes>
-			<class name="com.api.petstore.application.test.runner.Runner" />
+			<class name="CucumberOptions.Runner" />
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->
