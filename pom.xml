@@ -164,9 +164,6 @@
 				<configuration>
 					<includes>
 						<include>**/*Runner.java</include>
-						<include>**/Test*.java</include>
-						<include>**/*TestSuite.java</include>
-						<include>**/When*.java</include>
 					</includes>
 					<systemPropertyVariables>
 						<webdriver.base.url>${webdriver.base.url}</webdriver.base.url>
@@ -210,9 +207,6 @@
 					</execution>
 				</executions>
 			</plugin>
-
-			<!-- SpringBoot sample integration. This section starts the webservices 
-				under test before the integration tests, and stops them afterwards -->
 		</plugins>
 	</build>
 
